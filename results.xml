@@ -1,0 +1,4 @@
+<testsuite name="Mocha Tests" tests="2" failures="0" errors="0" skipped="0" timestamp="Thu, 06 Apr 2017 02:33:54 GMT" time="0.076">
+<testcase classname="Unit test to validate POST /article" name="POST article should add one article, the length of articles should increase by one" time="0.013"/>
+<testcase classname="Unit test to validate PUT /headline" name="should update healdine" time="0.025"/>
+</testsuite>
