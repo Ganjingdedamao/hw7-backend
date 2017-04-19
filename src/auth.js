@@ -41,7 +41,7 @@ function isAuthorized(req, auth){
 function isLoggedIn(req, res, next){
 	let sid=req.cookies[cookieKey]
 	if(!sid){
-		req.username='wl49test'
+		req.username='********'
 		next()
 		return
 	}
@@ -59,6 +59,8 @@ function isLoggedIn(req, res, next){
 function logout(req,res){//logout
 	const sid=req.cookies[cookieKey]
 	if(sid){
+		redis.del(sid)
+		res.clearCookie(cookieKey)
 		res.status(200).send('OK')
 	}else{
 		res.status(401).send('you have not logged in')

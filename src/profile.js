@@ -17,7 +17,7 @@ const getHeadlines = (req, res) => {
 				}]})
 			}
 			else{
-				res.status(401).send('No such user')
+				res.status(401).send('You have not loggedin or no such user')
 			}
 		}
 	})
@@ -58,7 +58,7 @@ const getEmail = (req, res) => {
 					email: pros[0].email
 				})
 			} else{
-				res.status(401).send('No such user')
+				res.status(401).send('You have not loggedin or no such user')
 			}
 		}
 	})	
@@ -99,7 +99,7 @@ const getZipcode = (req, res) => {
 					zipcode: pros[0].zipcode
 				})
 			} else{
-				res.status(401).send('No such user')
+				res.status(401).send('You have not loggedin or no such user')
 			}
 		}
 	})		
@@ -140,7 +140,7 @@ const getAvatars = (req, res) => {
 					avatar: pros[0].avatar
 				}]})
 			} else{
-				res.status(401).send('No such user')
+				res.status(401).send('You have not loggedin or no such user')
 			}
 		}
 	})	
@@ -180,7 +180,7 @@ const getDob = (req, res) => {
 					dob: pros[0].dob
 				})
 			} else{
-				res.status(401).send('No such user')
+				res.status(401).send('You have not loggedin or no such user')
 			}
 		}
 	})

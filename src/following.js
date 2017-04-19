@@ -16,7 +16,7 @@ const getFollowing=(req,res)=>{
 					following: pros[0].following
 				})
 			}else{
-				res.status(401).send('No such user')
+				res.status(401).send('You have not loggedin or no such user')
 			}
 		}
 	})
